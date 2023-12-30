@@ -1,0 +1,4 @@
+body {
+  @apply bg-zinc-950;
+  @apply text-white;
+}

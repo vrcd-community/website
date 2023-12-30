@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.tabSize": 2,
+  "cSpell.words": [
+    "Nuxt",
+    "vrcd"
+  ]
+}
