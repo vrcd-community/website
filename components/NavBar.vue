@@ -116,6 +116,11 @@ const rightNavLinks = [
     title: 'VPM 镜像站',
     href: 'https://vcc.vrczh.org',
     target: '_blank'
+  },
+  {
+    title: '论坛',
+    href: 'https://bbs.vrcd.org.cn',
+    target: '_blank'
   }
 ]
 
