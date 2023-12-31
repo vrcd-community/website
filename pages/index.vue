@@ -1,15 +1,15 @@
 <template>
     <Title>VRCD - 欢迎</Title>
     <div class="bg-[center_top_-12rem] bg-cover bg-no-repeat home pb-20">
-        <div class="w-4/6 mx-auto">
+        <div class="lg:w-4/6 w-5/6 mx-auto">
             <div class="mt-24">
                 <header>
                     <div>
-                        <h2 class="text-6xl">共享资源，共创未来</h2>
-                        <p class="text-xl text-zinc-400 text-right">——酷酷的老鼠</p>
+                        <h2 class="sm:text-6xl text-5xl">共享资源，共创未来</h2>
+                        <p class="sm:text-xl mt-2 text-lg text-zinc-400 text-right">——酷酷的老鼠</p>
                     </div>
                 </header>
-                <div class="flex mt-60 space-x-4">
+                <div class="flex xl:flex-row flex-col lg:mt-60 mt-10 xl:space-x-4 space-y-4 xl:space-y-0">
                     <InfoCard class="flex-1" title="公告 📢">
                         <div>
                             <p>VPM镜像库现已发布！</p>
@@ -44,7 +44,7 @@
                             VRCD 欢迎您的加入，让我们一起参加活动，共同推动社区发展！您的帮助和支持也许会带来意想不到的影响和效果！
                         </p>
                     </div>
-                    <div class="flex mt-4 space-x-4">
+                    <div class="flex md:flex-row flex-col mt-4 space-x-0 md:space-x-4 space-y-4 md:space-y-0">
                         <div class="flex-auto">
                             <NuxtImg class="size-full rounded-md object-cover" src="/images/home/home-1.png" />
                         </div>
@@ -56,7 +56,7 @@
                 <h2 class="text-4xl font-semibold">社区守则</h2>
                 <h2 class="text-4xl font-semibold">更多服务</h2>
                 <ButtonCard class="banner text-white" title="VRChat 中文资讯" description="了解 VRChat 官方的最新中文资讯" />
-                <div class="flex space-x-4">
+                <div class="flex md:flex-row flex-col md:space-x-4 space-x-0 space-y-4 md:space-y-0">
                     <ButtonCard class="flex-1 text-fuchsia-400" title="CC 公开讨论板" description="共同制作编辑可视化文档"
                         href="https://pixso.cn/app/share/t/vtV16q4Bg2sLS9S5rrxm7pM6zIskE9u-" target="_blank" />
                     <ButtonCard class="flex-1 text-cyan-500" title="文档库" description="敬请期待" button-text="敬请期待" />

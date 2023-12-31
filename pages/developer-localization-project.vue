@@ -1,21 +1,21 @@
 <template>
   <div class="text-emerald-500 dark:text-emerald-400">
-    <NuxtImg class="absolute h-[400px] w-full object-cover -z-10"
+    <NuxtImg class="absolute h-[400px] w-full object-cover -z-10 hidden xl:block"
       src="/images/developer-localization-project/banner.png" />
-    <div class="banner-cover">
-      <div class="flex max-w-6xl m-auto py-16">
-        <div class="flex-1 space-y-3">
-          <h1 class="font-bold text-8xl leading-snug">开发者<br />汉化计划</h1>
-          <h2 class="font-bold text-5xl">Developer Localization Project</h2>
+    <div class="banner-cover xl:h-[400px] h-auto">
+      <div class="flex flex-col xl:flex-row items-center xl:items-stretch max-w-6xl m-auto py-16">
+        <div class="flex-1 space-y-3 text-center xl:text-left">
+          <h1 class="font-bold text-6xl xl:text-8xl leading-snug">开发者<br />汉化计划</h1>
+          <h2 class="font-bold text-4xl xl:text-5xl">Developer Localization Project</h2>
         </div>
-        <div class="w-80">
-          <NuxtImg class="h-full object-contain" src="/images/developer-localization-project/icon.png" />
+        <div class="w-80 mt-12 xl:mt-0">
+          <NuxtImg class="h-full mx-auto object-contain" src="/images/developer-localization-project/icon.png" />
         </div>
       </div>
     </div>
   </div>
-  <div class="max-w-6xl mx-auto mt-16">
-    <div class="flex space-x-5">
+  <div class="lg:w-4/6 w-5/6 mx-auto mt-16">
+    <div class="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0">
       <InfoBorderCard title="来的好哇！🚀" class="flex-1 border-amber-500 bg-amber-500/5">
         <p>欢迎来到开发者汉化计划 ！</p>
         <p>这是一个完全公益的开发文档汉化项目，此计划目的在于降低开发者的语言门槛，引导更多玩家和创作者接触虚拟现实内容创作，并辅助国内VR内容质量的提升。🎉🎉</p>
@@ -37,7 +37,7 @@
       </InfoBorderCard>
     </div>
     <hr class="my-24 divider" />
-    <div class="columns-2 gap-4 space-y-4">
+    <div class="columns-1 sm:columns-2 gap-4 space-y-4">
       <InfoCard title="VRChat 汉化文档中心">
         <div class="full-prose">
           <NuxtImg class="w-full" src="/images/developer-localization-project/vrc-docs-screenshot.png" />
