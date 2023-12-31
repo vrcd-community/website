@@ -36,34 +36,34 @@
         </ul>
       </InfoBorderCard>
     </div>
-    <hr class="my-24 border-emerald-500 dark:border-emerald-400" />
+    <hr class="my-24 divider" />
     <div class="columns-2 gap-4 space-y-4">
       <InfoCard title="VRChat 汉化文档中心">
-        <div class="prose dark:prose-invert">
+        <div class="full-prose">
           <NuxtImg class="w-full" src="/images/developer-localization-project/vrc-docs-screenshot.png" />
           <h3>简介</h3>
           <p>VRChat 汉化文档中心是面向 VRChat 玩家/创作者的针对 VRChat 官方文档的本地化项目，致力于让更多中文母语者能通过计划更加深入接触 VRChat 开发的种种技术细节。</p>
-          <LinkButton class="text-emerald-500 dark:text-emerald-40 border-emerald-500 dark:border-emerald-400"
+          <NuxtLink class="not-prose link-button text-emerald-500 dark:text-emerald-40 divider"
             href="https://docs.vrczh.org" target="_blank">
             VRChat 汉化文档中心
-          </LinkButton>
+          </NuxtLink>
         </div>
       </InfoCard>
       <InfoCard title="开发者汉化术语对照表">
-        <div class="prose dark:prose-invert">
+        <div class="full-prose">
           <h3>简介</h3>
           <p>开发者汉化术语对照表是面向制定 VR 开发领域对词汇的诠释和翻译标准的项目，让翻译本身更加贴合开发者需求和术语标准的对照表项目。目前开发者汉化术语对照表由 VRCD 维护。</p>
           <h3>参与方式</h3>
           <p>您可以随时在 VRCD 创作者社区群内了解有关开发者汉化术语对照表的详情，讨论和交流技术细节，在腾讯文档中做出贡献。</p>
           <p>您也可以直接访问进入开发者汉化术语对照表文档：</p>
-          <LinkButton class="text-cyan-500 dark:text-cyan-400 border-cyan-500 dark:border-cyan-400"
+          <NuxtLink class="not-prose link-button text-cyan-500 dark:text-cyan-400 border-cyan-500 dark:border-cyan-400"
             href="https://docs.qq.com/doc/DQm1STHlua2tkVVh2?scene=8e31b4fa6c08283dc85c2622YK75r1" target="_blank">
             开发者汉化术语对照表文档
-          </LinkButton>
+          </NuxtLink>
         </div>
       </InfoCard>
       <InfoCard title="VRChat 中文资讯">
-        <div class="prose dark:prose-invert">
+        <div class="full-prose">
           <h3>简介</h3>
           <p>VRChat 有着多种渠道和媒体形式用于发布更新信息和社区公告，是时候将这些信息进行整合，发布，让各位创作者和玩家能够及时了解到VRChat官方的最新中文动态了！</p>
           <h3>参与方式</h3>
@@ -71,7 +71,7 @@
         </div>
       </InfoCard>
       <InfoCard title="LTCGI 文档汉化翻译">
-        <div class="prose dark:prose-invert">
+        <div class="full-prose">
           <h3>简介</h3>
           <p>LTGCI 一直都是在各种 VRChat 光影地图中常用到的出色插件，对于快速提升地图观赏度来说简直是得手利器，但是有不少国内创作者因为 LTCGI 官方文档英文的门槛望而却步，实在是可惜。</p>
           <p>为什么我们不试着去翻译那些信息呢？也许我们真的可以这么做，但这个项目开工可能需要花上那么一点时间。</p>
@@ -80,17 +80,17 @@
         </div>
       </InfoCard>
       <InfoCard title="开发者汉化集会">
-        <div class="prose dark:prose-invert">
+        <div class="full-prose">
           <NuxtImg class="w-full" src="/images/developer-localization-project/meeting-banner.png" />
           <h2>简介</h2>
           <p>
             开发者汉化集会活动意在于为开发者们解决和讨论汉化过程中遇到的问题，难题，与此同时为大家提供更加便利友好多元多彩的讨论环境。
             开发者汉化集会每隔两周，每举办周的星期六晚 9pm-10pm 进行。
           </p>
-          <LinkButton class="text-cyan-500 dark:text-cyan-400 border-cyan-500 dark:border-cyan-400"
+          <NuxtLink class="not-prose link-button text-cyan-500 dark:text-cyan-400 border-cyan-500 dark:border-cyan-400"
             href="https://docs.qq.com/aio/DQkFBSlpWZFdHalp6" target="_blank">
             腾讯文档
-          </LinkButton>
+          </NuxtLink>
           <h2>参与方式</h2>
           <p>通过加入 VRChat 中的 VRCD 群组，您可以获得加入集会的权限。</p>
           <NuxtLink href="https://vrchat.com/home/group/grp_129971e7-3f5f-4102-aa95-f6b958279ad0" target="_blank">VRCD
@@ -98,7 +98,7 @@
         </div>
       </InfoCard>
     </div>
-    <hr class="my-12 border-emerald-500 dark:border-emerald-400" />
+    <hr class="my-12 divider" />
     <NuxtImg src="/images/developer-localization-project/divider.png" class="w-full object-contain" />
     <InfoBorderCard title="想来点投稿？✨" class="flex-1 border-purple-500 bg-purple-500/5 my-4">
       <p>
@@ -113,6 +113,10 @@
 </template>
 
 <style scoped>
+.divider {
+  @apply border-emerald-500 dark:border-emerald-400;
+}
+
 .banner-cover {
   --banner-cover-color-1: rgb(223, 223, 238);
   --banner-cover-color-2: rgba(197, 209, 221, 0.73);

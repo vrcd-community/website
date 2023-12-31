@@ -4,7 +4,7 @@
       <template v-slot="{ doc }">
         <InfoCard :title="title">
           <article>
-            <ContentRenderer :value="doc" class="prose dark:prose-invert" />
+            <ContentRenderer :value="doc" class="full-prose" />
           </article>
         </InfoCard>
       </template>
