@@ -53,9 +53,9 @@
                         </div>
                     </div>
                 </InfoCard>
-                <h2 class="text-4xl font-semibold">社区守则</h2>
                 <h2 class="text-4xl font-semibold">更多服务</h2>
-                <ButtonCard class="banner text-white" title="VRChat 中文资讯" description="了解 VRChat 官方的最新中文资讯" />
+                <ButtonCard href="https://bbs.vrcd.org.cn/t/vrchat" target="_blank" class="banner text-white"
+                    title="VRChat 中文资讯" description="了解 VRChat 官方的最新中文资讯" />
                 <div class="flex md:flex-row flex-col md:space-x-4 space-x-0 space-y-4 md:space-y-0">
                     <ButtonCard class="flex-1 text-fuchsia-400" title="CC 公开讨论板" description="共同制作编辑可视化文档"
                         href="https://pixso.cn/app/share/t/vtV16q4Bg2sLS9S5rrxm7pM6zIskE9u-" target="_blank" />

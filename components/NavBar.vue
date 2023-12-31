@@ -100,15 +100,15 @@ const leftNavLinks = [
   {
     title: '开发者汉化计划',
     to: '/developer-localization-project',
-    href: '',
-    target: ''
+    href: undefined,
+    target: undefined
   }
 ]
 
 const rightNavLinks = [
   {
     title: 'VRChat 汉化文档中心',
-    to: '',
+    to: undefined,
     href: 'https://docs.vrczh.org/',
     target: '_blank'
   },
