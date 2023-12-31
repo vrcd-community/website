@@ -1,7 +1,14 @@
 <template>
-  <NavBar />
+  <Title>VRCD</Title>
+  <nav>
+    <NavBar />
+  </nav>
   <div class="pt-14">
-    <NuxtPage />
-    <Bottom />
+    <main>
+      <NuxtPage />
+    </main>
+    <footer>
+      <Bottom />
+    </footer>
   </div>
 </template>

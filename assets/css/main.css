@@ -1,4 +1,8 @@
-body {
+.dark-mode body {
   @apply bg-zinc-950;
   @apply text-white;
+}
+
+body {
+  @apply bg-slate-200;
 }
