@@ -1,6 +1,6 @@
 <template>
   <div class="text-emerald-500 dark:text-emerald-400">
-    <NuxtImg class="absolute h-[400px] w-full object-cover -z-10 hidden xl:block"
+    <NuxtPicture class="absolute h-[400px] w-full object-cover -z-10 hidden xl:block"
       src="/images/developer-localization-project/banner.png" />
     <div class="banner-cover xl:h-[400px] h-auto">
       <div class="flex flex-col xl:flex-row items-center xl:items-stretch max-w-6xl m-auto py-16">
@@ -9,7 +9,7 @@
           <h2 class="font-bold text-4xl xl:text-5xl">Developer Localization Project</h2>
         </div>
         <div class="w-80 mt-12 xl:mt-0">
-          <NuxtImg class="h-full mx-auto object-contain" src="/images/developer-localization-project/icon.png" />
+          <NuxtPicture class="h-full mx-auto object-contain" src="/images/developer-localization-project/icon.png" />
         </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
     <div class="columns-1 sm:columns-2 gap-4 space-y-4">
       <InfoCard title="VRChat 汉化文档中心">
         <div class="full-prose">
-          <NuxtImg class="w-full" src="/images/developer-localization-project/vrc-docs-screenshot.png" />
+          <NuxtPicture class="w-full" src="/images/developer-localization-project/vrc-docs-screenshot.png" />
           <h3>简介</h3>
           <p>VRChat 汉化文档中心是面向 VRChat 玩家/创作者的针对 VRChat 官方文档的本地化项目，致力于让更多中文母语者能通过计划更加深入接触 VRChat 开发的种种技术细节。</p>
           <NuxtLink class="not-prose link-button text-emerald-500 dark:text-emerald-40 divider"
@@ -81,7 +81,7 @@
       </InfoCard>
       <InfoCard title="开发者汉化集会">
         <div class="full-prose">
-          <NuxtImg class="w-full" src="/images/developer-localization-project/meeting-banner.png" />
+          <NuxtPicture class="w-full" src="/images/developer-localization-project/meeting-banner.png" />
           <h2>简介</h2>
           <p>
             开发者汉化集会活动意在于为开发者们解决和讨论汉化过程中遇到的问题，难题，与此同时为大家提供更加便利友好多元多彩的讨论环境。
@@ -99,7 +99,7 @@
       </InfoCard>
     </div>
     <hr class="my-12 divider" />
-    <NuxtImg src="/images/developer-localization-project/divider.png" class="w-full object-contain" />
+    <NuxtPicture src="/images/developer-localization-project/divider.png" class="w-full object-contain" />
     <InfoBorderCard title="想来点投稿？✨" class="flex-1 border-purple-500 bg-purple-500/5 my-4">
       <p>
         您是否也有着希望通过共同的努力回馈社区的汉化计划或者项目？</p>
@@ -108,7 +108,7 @@
       <p>管理员联系方式：</p>
       <p>QQ：（管理员空位，目前请暂时直接联系VRCD创作者社区管理员）</p>
     </InfoBorderCard>
-    <NuxtImg src="/images/developer-localization-project/divider.png" class="w-full object-contain mb-10" />
+    <NuxtPicture src="/images/developer-localization-project/divider.png" class="w-full object-contain mb-10" />
   </div>
 </template>
 

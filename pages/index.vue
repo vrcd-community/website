@@ -46,10 +46,12 @@
                     </div>
                     <div class="flex md:flex-row flex-col mt-4 space-x-0 md:space-x-4 space-y-4 md:space-y-0">
                         <div class="flex-auto">
-                            <NuxtImg class="size-full rounded-md object-cover" src="/images/home/home-1.png" />
+                            <NuxtPicture :imgAttrs="{ class: 'size-full rounded-md object-cover' }"
+                                src="/images/home/home-1.png" />
                         </div>
                         <div class="flex-auto">
-                            <NuxtImg class="size-full rounded-md object-cover" src="/images/home/home-2.jpg" />
+                            <NuxtPicture :imgAttrs="{ class: 'size-full rounded-md object-cover' }"
+                                src="/images/home/home-2.jpg" />
                         </div>
                     </div>
                 </InfoCard>

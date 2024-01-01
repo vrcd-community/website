@@ -18,5 +18,9 @@ export default defineNuxtConfig({
   sitemap: {
     strictNuxtContentPaths: true
   },
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  image: {
+    quality: 80,
+    format: ['avif', 'webp', 'png', 'jpg']
+  }
 })
