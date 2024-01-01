@@ -1,5 +1,9 @@
 <template>
+  <NuxtPwaManifest />
   <Title>VRCD</Title>
+  <ClientOnly>
+    <PromptForUpdate />
+  </ClientOnly>
   <nav>
     <NavBar />
   </nav>
