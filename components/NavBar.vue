@@ -2,7 +2,9 @@
   <div class="fixed flex items-center h-14 w-full bg-zinc-100 dark:bg-zinc-900 px-12">
     <div class="h-full py-4">
       <NuxtLink to="/">
-        <NuxtImg class="h-full" :src="isDark ? '/images/vrcd-main-white-h.png' : '/images/vrcd-main-black-h.png'" />
+        <ClientOnly>
+          <img class="h-full" :src="isDark ? '/images/vrcd-main-white-h.png' : '/images/vrcd-main-black-h.png'" />
+        </ClientOnly>
       </NuxtLink>
     </div>
     <div class="space-x-4 text-lg ml-4 hidden lg:flex">
@@ -18,7 +20,9 @@
         {{ item.title }}
       </NuxtLink>
       <button @click="isDark = !isDark" class="nav-button rounded-md">
-        <Icon :name="isDark ? 'material-symbols:dark-mode' : 'material-symbols:light-mode'" />
+        <ClientOnly>
+          <Icon :name="isDark ? 'material-symbols:dark-mode' : 'material-symbols:light-mode'" />
+        </ClientOnly>
       </button>
       <div class="flex space-x-2">
         <NuxtLink class="nav-button"
@@ -57,7 +61,7 @@
       </NuxtLink>
       <hr class="dark:border-zinc-800 border-zinc-300" />
       <div class="flex space-x-1 items-center">
-        <button @click="isDark = !isDark" class="nav-button rounded-md">
+        <button @click="$colorMode.preference = 'dark'" class="nav-button rounded-md">
           <Icon :name="isDark ? 'material-symbols:dark-mode' : 'material-symbols:light-mode'" />
         </button>
         <div class="flex-1"></div>

@@ -1,6 +1,8 @@
 <template>
   <div class="bg-zinc-100 dark:bg-zinc-900 flex flex-col items-center py-16">
-    <NuxtImg class="h-6" :src="isDark ? '/images/vrcd-main-white-h.png' : '/images/vrcd-main-black-h.png'" />
+    <ClientOnly>
+      <img class="h-6" :src="isDark ? '/images/vrcd-main-white-h.png' : '/images/vrcd-main-black-h.png'" />
+    </ClientOnly>
     <div class="flex space-x-12 mt-4">
       <NuxtLink class="flex-auto">服务条款</NuxtLink>
       <NuxtLink class="flex-auto">隐私政策</NuxtLink>
