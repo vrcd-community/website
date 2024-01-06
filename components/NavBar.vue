@@ -25,6 +25,9 @@
         </ClientOnly>
       </button>
       <div class="flex space-x-2">
+        <NuxtLink class="nav-button" href="https://github.com/vrcd-communtiy" target="_blank">
+          <Icon name="mdi:github" />
+        </NuxtLink>
         <NuxtLink class="nav-button"
           href="https://qm.qq.com/cgi-bin/qm/qr?k=giJOizm4gtgi0LkW8jOguFcDItINIy6n&jump_from=webapi&authKey=VijnIKfoJvsmMu/KXsMCwaNUmCVNv7TC32iKvZnmfKKPAWHuUS0RH1yjIhjv4tB7"
           target="_blank">
@@ -66,6 +69,9 @@
         </button>
         <div class="flex-1"></div>
         <div>
+          <NuxtLink class="nav-button" href="https://github.com/vrcd-communtiy" target="_blank">
+            <Icon name="mdi:github" />
+          </NuxtLink>
           <NuxtLink class="nav-button"
             href="https://qm.qq.com/cgi-bin/qm/qr?k=giJOizm4gtgi0LkW8jOguFcDItINIy6n&jump_from=webapi&authKey=VijnIKfoJvsmMu/KXsMCwaNUmCVNv7TC32iKvZnmfKKPAWHuUS0RH1yjIhjv4tB7"
             target="_blank">
