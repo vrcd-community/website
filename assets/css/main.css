@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .dark-mode body {
   @apply bg-zinc-950;
   @apply text-white;
@@ -11,18 +7,14 @@ body {
   @apply bg-slate-200;
 }
 
-@layer components {
-  .nav-button {
-    @apply hover:bg-gray-500/30 p-2 rounded-md;
-  }
-
-  .link-button {
-    @apply block w-full p-4 font-semibold text-center text-xl no-underline border-2 rounded-lg hover:bg-gray-300/50 dark:hover:bg-gray-300/10;
-  }
+.full-prose {
+  @apply prose dark:prose-invert;
 }
 
-@layer utilities {
-  .full-prose {
-    @apply prose dark:prose-invert;
-  }
+.nav-button {
+  @apply hover:bg-gray-500/30 p-2 rounded-md;
+}
+
+.link-button {
+  @apply block w-full p-4 font-semibold text-center text-xl no-underline border-2 rounded-lg hover:bg-gray-300/50 dark:hover:bg-gray-300/10;
 }
