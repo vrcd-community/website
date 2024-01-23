@@ -25,7 +25,7 @@
         </ClientOnly>
       </button>
       <div class="flex space-x-2">
-        <NuxtLink class="nav-button" href="https://github.com/vrcd-communtiy" target="_blank">
+        <NuxtLink class="nav-button" href="https://github.com/vrcd-community" target="_blank">
           <Icon name="mdi:github" />
         </NuxtLink>
         <NuxtLink class="nav-button"
