@@ -4,10 +4,10 @@
   <ClientOnly>
     <PromptForUpdate />
   </ClientOnly>
-  <nav>
-    <NavBar />
-  </nav>
-  <div class="pt-14">
+  <header>
+    <Header />
+  </header>
+  <div class="">
     <main>
       <NuxtPage />
     </main>
