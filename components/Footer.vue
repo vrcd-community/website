@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-zinc-100 dark:bg-zinc-900 flex flex-col items-center py-16">
+  <div class="bg-[#ffffff] dark:bg-[#161718] flex flex-col items-center py-16 transition">
     <ClientOnly>
-      <img class="h-6" :src="isDark ? '/images/vrcd-main-white-h.png' : '/images/vrcd-main-black-h.png'" />
+      <IconsVRCD />
     </ClientOnly>
     <div class="flex space-x-12 mt-4">
       <NuxtLink class="flex-auto">服务条款</NuxtLink>
