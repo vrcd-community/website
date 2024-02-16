@@ -1,15 +1,15 @@
 <template>
   <div class="text-emerald-500 dark:text-emerald-400">
-    <NuxtPicture class="absolute h-[400px] w-full object-cover -z-10 hidden xl:block"
-      src="/images/developer-localization-project/banner.png" />
-    <div class="banner-cover xl:h-[400px] h-auto">
-      <div class="flex flex-col xl:flex-row items-center xl:items-stretch max-w-6xl m-auto py-16">
-        <div class="flex-1 space-y-3 text-center xl:text-left">
-          <h1 class="font-bold text-6xl xl:text-8xl leading-snug">开发者<br />汉化计划</h1>
-          <h2 class="font-bold text-4xl xl:text-5xl">Developer Localization Project</h2>
-        </div>
-        <div class="w-80 mt-12 xl:mt-0">
-          <NuxtPicture class="h-full mx-auto object-contain" src="/images/developer-localization-project/icon.png" />
+    <div class="bg-[image:url('/images/developer-localization-project/banner.png')] bg-center bg-cover bg-no-repeat">
+      <div class="banner-cover">
+        <div class="flex flex-col xl:flex-row items-center max-w-6xl mx-auto py-24 pt-48">
+          <div class="flex-1 space-y-3 text-center xl:text-left">
+            <h1 class="font-bold text-6xl xl:text-8xl leading-snug">开发者<br />汉化计划</h1>
+            <h2 class="font-bold text-4xl xl:text-5xl">Developer Localization Project</h2>
+          </div>
+          <div class="mt-12 xl:mt-0">
+            <NuxtPicture class="mx-auto " src="/images/developer-localization-project/icon.png" />
+          </div>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
       </InfoBorderCard>
     </div>
     <hr class="my-24 divider" />
-    <div class="columns-1 sm:columns-2 gap-4 space-y-4">
+    <div class="columns-1 sm:columns-2 gap-4 space-y-4 break-inside-avoid">
       <InfoCard title="VRChat 汉化文档中心">
         <div class="full-prose">
           <NuxtPicture class="w-full" src="/images/developer-localization-project/vrc-docs-screenshot.png" />

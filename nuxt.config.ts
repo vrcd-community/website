@@ -26,9 +26,6 @@ export default defineNuxtConfig({
     format: ['avif', 'webp', 'png', 'jpg']
   },
   pwa: {
-    devOptions: {
-      enabled: true,
-    },
     workbox: {
       cleanupOutdatedCaches: true,
     },
