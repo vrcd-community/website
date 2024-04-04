@@ -1,6 +1,6 @@
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
-  const runtimeConfig = useRuntimeConfig()
+  const runtimeConfig = useRuntimeConfig(event)
 
   const searchResult = await $fetch<SearchResult>(
     runtimeConfig.searchEndpoint,
