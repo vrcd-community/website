@@ -2093,7 +2093,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/content@npm:^2.10.0":
+"@nuxt/content@npm:^2.12.1":
   version: 2.12.1
   resolution: "@nuxt/content@npm:2.12.1"
   dependencies:
@@ -13125,7 +13125,7 @@ __metadata:
   dependencies:
     "@iconify-json/material-symbols": "npm:^1.1.76"
     "@iconify-json/mdi": "npm:^1.1.65"
-    "@nuxt/content": "npm:^2.10.0"
+    "@nuxt/content": "npm:^2.12.1"
     "@nuxt/image": "npm:^1.5.0"
     "@nuxtjs/color-mode": "npm:^3.3.3"
     "@nuxtjs/tailwindcss": "npm:^6.11.4"
@@ -13136,7 +13136,7 @@ __metadata:
     nuxt-simple-robots: "npm:^4.0.0-rc.16"
     nuxt-simple-sitemap: "npm:^4.4.1"
     tailwindcss: "npm:^3.4.3"
-    vue: "npm:^3.4.0"
+    vue: "npm:^3.4.21"
     vue-router: "npm:^4.3.0"
   languageName: unknown
   linkType: soft
@@ -13275,7 +13275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:^3.4.0, vue@npm:^3.4.21":
+"vue@npm:^3.4.21":
   version: 3.4.21
   resolution: "vue@npm:3.4.21"
   dependencies:
