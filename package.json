@@ -25,5 +25,5 @@
     "vue": "^3.4.0",
     "vue-router": "^4.3.0"
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.1.1"
 }
