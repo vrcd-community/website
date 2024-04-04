@@ -7,33 +7,29 @@
         class="pt-28 min-h-screen sm:justify-center flex items-center sm:flex-row flex-col bg-center bg-no-repeat home sm:px-0 px-4">
 
         <div class="sm:w-3/4 mx-auto items-start gap-5 flex 2xl:flex-row flex-col">
-          <div class="flex-1 space-y-8">
+          <div class="flex-1 space-y-14">
             <div>
-              <h2 class="lg:text-7xl sm:text-5xl text-4xl font-semibold mb-2">
-                共享资源，共创未来。
+              <h2 class="lg:text-6xl sm:text-5xl text-4xl font-semibold mb-2">
+                虚拟现实中文开发者社区
               </h2>
               <span class="text-lg text-neutral-500">
                 ————酷酷的鼠鼠
               </span>
             </div>
-            <div class="my-4 p-4 h-fit rounded-lg bg-zinc-100/40 dark:bg-zinc-900/70">
-              <h2 class="mb-4 text-3xl font-semibold">公告</h2>
-              <p class="text-lg font-normal">
-                VPM镜像库现已发布！
-                您可以通过使用此镜像库直接在创作者助手中同步 VRChat SDK 而无需国际网络环境！这是国内 VRChat 内容制作所迈出的一大步。
-              </p>
-            </div>
+            <SearchBar jumpToSearch class="max-w-2xl" />
           </div>
           <div class="flex-1 sm:columns-2 columns-1 w-full *:break-inside-avoid space-y-4">
-            <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="开发者汉化计划" info="共同参与汉化工作，让技术无国界"
-              to="/developer-localization-project"></LinkCard>
-            <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="VRChat 汉化文档中心" info="共同参与汉化工作，让技术无国界" target="_blank"
-              href="https://docs.vrczh.org/"></LinkCard>
+            <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="开发者汉化计划" info="共同参与汉化工作，让创作无国界"
+              to="/developer-localization-project" />
+            <LinkCard class="bg-[#9091F7] text-[#9091F7]" title="文档库" info="公益，开源，开放的创作者知识库" target="_blank"
+              href="https://docs.vrcd.org.cn/"></LinkCard>
             <LinkCard class="bg-[#35B6D6] text-[#35B6D6]" title="VPM 镜像库" info="体验更快、更便捷的 VPM 加载" target="_blank"
-              href="https://vcc.vrczh.org/"></LinkCard>
-            <LinkCard class="bg-[#0065CA] text-[#0065CA]" title="VRChat 中文资讯" info="了解 VRChat 官方的最新中文资讯" to="/">
-            </LinkCard>
-            <LinkCard class="bg-[#9091F7] text-[#9091F7]" title="文档库" info="敬请期待" to="/"></LinkCard>
+              href="https://vcc.vrczh.org/" />
+            <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="VRChat 汉化文档中心" info="VRChat 官方文档的汉化项目" target="_blank"
+              href="https://docs.vrczh.org/" />
+            <LinkCard class="bg-[#FFB060] text-[#FFB060]" title="VRChat 入门包" info="带你零基础学习创作的最佳途径" to="/" />
+            <LinkCard class="bg-[#F368C7] text-[#F368C7]" title="CC 公开讨论版" info="共同制作编辑可视化文档" to="/" />
+
           </div>
         </div>
       </div>
