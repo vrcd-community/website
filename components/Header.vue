@@ -119,8 +119,8 @@ const socialItems = [
   {
     icon: undefined,
     componentIcon: IconsKOOK,
-    tooltip: 'QQ 群',
-    href: 'https://qm.qq.com/cgi-bin/qm/qr?k=giJOizm4gtgi0LkW8jOguFcDItINIy6n&jump_from=webapi&authKey=VijnIKfoJvsmMu/KXsMCwaNUmCVNv7TC32iKvZnmfKKPAWHuUS0RH1yjIhjv4tB7',
+    tooltip: 'KOOK',
+    href: 'https://kook.top/PCMwFB',
     target: '_blank',
     to: undefined
   }
