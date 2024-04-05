@@ -13,6 +13,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     searchEndpoint: "",
+    searchApiKey: "",
   },
   routeRules: {
     "/": { isr: true },

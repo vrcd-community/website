@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  result: Hit
+  result: SearchHit
 }>()
 
 // https://github.com/mdit-vue/mdit-vue/blob/d493d4ca4cf5af4c54cca56a04b4bae5b8700f0e/packages/shared/src/slugify.ts
@@ -30,13 +30,12 @@ function slugify(str: string): string {
 
 <template>
   <NuxtLink target="_blank"
-    :to="'https://docs.vrczh.org/' + result._source.extra.path.replace('.md', '') + '#' + slugify(result._source.chunk.title)"
-    class="block">
+    :to="'https://docs.vrczh.org/' + result.uri.replace('.md', '') + '#' + slugify(result.chunkTitle)" class="block">
     <div class="bg-white/50 dark:bg-neutral-900/40 shadow-sm rounded-md p-4 transition">
-      <h2 class="text-2xl font-semibold">{{ result._source.title }} > {{ result._source.chunk.title }}</h2>
+      <h2 class="text-2xl font-semibold">{{ result.title }} > {{ result.chunkTitle }}</h2>
       <MDC
         class="prose prose-sm dark:prose-invert prose-li:marker:text-current prose-hr:border-current mt-2 max-w-none whitespace-normal pointer-events-none"
-        :value="result._source.chunk.content.replace(/!\[.+\]\(.+\)/g, '')" />
+        :value="result.chunkContent.replace(/!\[.+\]\(.+\)/g, '')" />
     </div>
   </NuxtLink>
 </template>
