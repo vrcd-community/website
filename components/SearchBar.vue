@@ -3,18 +3,22 @@ const props = defineProps<{
   jumpToSearch?: boolean
 }>()
 
+const emits = defineEmits(['search'])
+
 const keyword = defineModel<string>()
 
 const router = useRouter()
 
 function toSearch() {
-  if (keyword.value === '') return
+  if (keyword.value === '' || keyword.value === undefined || keyword.value === null) return
+
+  emits('search')
 
   if (!props.jumpToSearch) {
     return
   }
 
-  router.push({ path: 'search', query: { keyword: keyword.value } })
+  router.push({ path: '/search', query: { keyword: keyword.value } })
 }
 </script>
 

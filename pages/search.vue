@@ -7,11 +7,16 @@
       <!-- <h3 class="text-xl">标签</h3> -->
     </div>
     <div class="flex-1">
-      <SearchBar class="mb-4" v-model="keyword" />
-      <div class="space-y-4">
-        <SearchResultItem v-for="result in searchResult?.hits" :result="result" />
+      <SearchBar @search="search()" class="mb-4" v-model="keyword" />
+      <div v-if="!loading">
+        <div class="space-y-4">
+          <SearchResultItem v-for="result in searchResult?.hits" :result="result" />
+        </div>
+        <p class="text-neutral-700/60 dark:text-neutral-300/80 text-center mt-12 select-none">———— End ————</p>
       </div>
-      <p class="text-neutral-700/60 dark:text-neutral-300/80 text-center mt-12 select-none">———— End ————</p>
+      <div v-else>
+        <p class="text-neutral-700/60 dark:text-neutral-300/80 text-center mt-12 select-none">Loading...</p>
+      </div>
     </div>
   </div>
   <div class="home h-screen w-screen fixed top-0 left-0 bg-center z-[-10]"></div>
@@ -23,10 +28,6 @@ const router = useRouter()
 
 const keyword = ref(route.query.keyword as string | null | undefined ?? '')
 
-watch(keyword, () => {
-  router.replace({ query: { keyword: keyword.value } })
-})
-
 const actualKeyword = ref(keyword.value)
 
 const { data: searchResult, pending: loading } = await useFetch<SearchResult>('/api/search', {
@@ -37,38 +38,13 @@ const { data: searchResult, pending: loading } = await useFetch<SearchResult>('/
   server: false,
 })
 
-let lastTypeTime = Date.now()
-let searchRateLimitLock = false
-
-watch(keyword, () => {
-  lastTypeTime = Date.now()
-
-  if (keyword.value === '') {
-    router.replace({ query: {} })
-  } else {
-    router.replace({ query: { keyword: keyword.value } })
-  }
-
-  if (!process.client) {
-    return
-  }
-
-  if (!searchRateLimitLock) {
-    tryInvokeSearch()
-  }
-})
-
-async function tryInvokeSearch() {
-  searchRateLimitLock = true
-  const timeout = Date.now() - lastTypeTime
-
-  if (timeout > 200) {
-    actualKeyword.value = keyword.value
-    searchRateLimitLock = false
-  } else {
-    setTimeout(tryInvokeSearch, 100)
-  }
+function search() {
+  actualKeyword.value = keyword.value
 }
+
+watch(actualKeyword, () => {
+  router.replace({ query: { keyword: actualKeyword.value } })
+})
 </script>
 
 <style scoped>
