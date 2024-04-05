@@ -72,13 +72,22 @@ watch(actualKeyword, () => {
 }
 
 .loading {
-  animation: loading-animation 1.5s infinite;
   width: 100%;
   height: 120px;
-  background: linear-gradient(90deg, #1a202c 25%, #2d3748 50%, #1a202c 75%);
-  background-size: 400% 400%;
   border-radius: 8px;
   opacity: 0.5;
   margin-bottom: 12px;
+}
+
+.light-mode .loading {
+  animation: loading-animation 1.5s infinite;
+  background: linear-gradient(90deg, #f7fafc 25%, #c3c8ce 50%, #f7fafc 75%);
+  background-size: 400% 400%;
+}
+
+.dark-mode .loading {
+  animation: loading-animation 1.5s infinite;
+  background: linear-gradient(90deg, #1a202c 25%, #2d3748 50%, #1a202c 75%);
+  background-size: 400% 400%;
 }
 </style>
