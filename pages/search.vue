@@ -7,7 +7,7 @@
       <!-- <h3 class="text-xl">标签</h3> -->
     </div>
     <div class="flex-1">
-      <SearchBar @search="search()" class="mb-4" v-model="keyword" />
+      <SearchBar @search="search()" class="mb-4" v-model="keyword" :loading="loading" />
       <div v-if="!loading">
         <div class="space-y-4">
           <SearchResultItem v-for="result in searchResult?.hits" :result="result" />
@@ -15,7 +15,14 @@
         <p class="text-neutral-700/60 dark:text-neutral-300/80 text-center mt-12 select-none">———— End ————</p>
       </div>
       <div v-else>
-        <p class="text-neutral-700/60 dark:text-neutral-300/80 text-center mt-12 select-none">Loading...</p>
+        <div class="loading"></div>
+        <div class="loading"></div>
+        <div class="loading"></div>
+        <div class="loading"></div>
+        <div class="loading"></div>
+        <div class="loading"></div>
+        <div class="loading"></div>
+        <div class="loading"></div>
       </div>
     </div>
   </div>
@@ -50,5 +57,28 @@ watch(actualKeyword, () => {
 <style scoped>
 .home {
   background-image: url('/images/home/background-cover.png');
+}
+
+@keyframes loading-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.loading {
+  animation: loading-animation 1.5s infinite;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(90deg, #1a202c 25%, #2d3748 50%, #1a202c 75%);
+  background-size: 400% 400%;
+  border-radius: 8px;
+  opacity: 0.5;
+  margin-bottom: 12px;
 }
 </style>
