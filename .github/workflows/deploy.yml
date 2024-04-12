@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: lts/*
 
-      - run: "corepacl enable"
+      - run: "corepack enable"
 
       - name: Install step
         run: "yarn install"
