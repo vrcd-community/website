@@ -7,9 +7,15 @@ interface SearchResultDebugQueryBackend {
   size: number
 }
 
+interface SearchResultDebugDataBackend {
+  value: number
+  relation: string
+}
+
 interface SearchResultDebugBackend {
   _score: SearchResultDebugScoreBackend
   query: SearchResultDebugQueryBackend
+  _data: SearchResultDebugDataBackend
 }
 
 interface SearchResultChunkBackend {

@@ -1,6 +1,7 @@
 interface SearchResult {
   timing: SearchResultTiming
   hits: SearchHit[]
+  total: number
 }
 
 interface SearchResultTiming {

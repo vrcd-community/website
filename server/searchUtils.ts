@@ -16,6 +16,7 @@ export async function search(
 
   return {
     timing: searchResult.timing,
+    total: searchResult.debug._data.value,
     hits: searchResult.hits.map((hit) => ({
       title: hit._source.title,
       chunkContent: hit._source.chunk.content,
