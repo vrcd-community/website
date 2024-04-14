@@ -1,5 +1,5 @@
 <template>
-  <div class="flex pt-40 pb-16   max-w-7xl mx-auto space-x-4 transition">
+  <div class="flex pt-40 pb-16 max-w-7xl mx-auto space-x-4 transition">
     <div class="w-72 bg-white/50 dark:bg-neutral-900/40 shadow-sm h-min p-4 rounded-md">
       <h2 class="text-2xl font-semibold">筛选</h2>
       <h3 class=" font-semibold mt-2">TODO</h3>
@@ -75,7 +75,7 @@ watch(actualKeyword, () => {
 
 .loading {
   width: 100%;
-  height: 120px;
+  height: 220px;
   border-radius: 8px;
   opacity: 0.5;
   margin-bottom: 12px;

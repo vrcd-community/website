@@ -6,8 +6,10 @@ defineProps<{
 
 <template>
   <NuxtLink target="_blank" :to="result.uri" class="block">
-    <div class="bg-white/50 dark:bg-neutral-900/40 shadow-sm rounded-md p-4 transition">
-      <h2 class="text-2xl font-semibold">{{ result.title }} > {{ result.chunkTitle }}</h2>
+    <div class="bg-white/50 dark:bg-neutral-900/40 shadow-sm rounded-md p-4 transition max-h-[220px] overflow-hidden">
+      <h2 class="text-2xl font-semibold">{{ result.title }} > {{ result.chunkTitle }}
+      </h2>
+      <SearchSourceTag :source="result.source" />
       <MDC
         class="prose prose-sm dark:prose-invert prose-li:marker:text-current prose-hr:border-current mt-2 max-w-none whitespace-normal pointer-events-none"
         :value="result.chunkContent.replace(/!\[.+\]\(.+\)/g, '')" />
