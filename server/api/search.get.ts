@@ -19,15 +19,41 @@ export default defineEventHandler(async (event) => {
       chunkContent: hit._source.chunk.content,
       chunkTitle: hit._source.chunk.title,
       chunkLevel: hit._source.chunk.level,
-      uri:
-        "https://docs.vrczh.org/" +
-        hit._source.extra.path.replace(".md", "") +
-        "#" +
-        slugify(hit._source.chunk.title),
+      uri: getUrl(
+        hit._source.extra.source,
+        hit._source.extra.path,
+        hit._source.title,
+        hit._source.chunk.title
+      ),
       source: hit._source.extra.source,
     })),
   } as SearchResult
 })
+
+function getUrl(
+  source: string,
+  path: string,
+  title: string,
+  chunkTitle: string
+) {
+  switch (source) {
+    case "creators.vrchat.com" ||
+      "docs.vrchat.com" ||
+      "udonsharp.docs.vrchat.com" ||
+      "vcc.docs.vrchat.com" ||
+      "clientsim.docs.vrchat.com":
+      return (
+        "https://docs.vrczh.org/" +
+        path.replace(".md", "") +
+        "#" +
+        slugify(chunkTitle)
+      )
+    case "bookstack":
+      return path + "#" + ("bkmrk-" + chunkTitle).substring(0, 26).toLowerCase()
+    default:
+      return path
+  }
+}
 
 // https://github.com/mdit-vue/mdit-vue/blob/d493d4ca4cf5af4c54cca56a04b4bae5b8700f0e/packages/shared/src/slugify.ts
 const rControl = /[\u0000-\u001f]/g
