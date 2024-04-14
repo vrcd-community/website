@@ -1,55 +1,38 @@
-interface Timing {
-  took: number
-  timeout: boolean
-}
-
-interface Shards {
-  total: number
-  successful: number
-  skipped: number
-  failed: number
-}
-
-interface Data {
-  value: number
-  relation: string
-}
-
-interface Score {
+interface SearchResultDebugScoreBackend {
   max: number
 }
 
-interface Debug {
-  _shards: Shards
-  _data: Data
-  _score: Score
+interface SearchResultDebugBackend {
+  _score: SearchResultDebugScoreBackend
+  from: number
+  size: number
 }
 
-interface Chunk {
+interface SearchResultChunkBackend {
   title: string
   level: number
   content: string
 }
 
-interface Extra {
+interface SearchResultExtraBackend {
   source: string
   tags: string[]
   path: string
 }
 
-interface Source {
-  chunk: Chunk
+interface SearchResultSourceBackend {
+  chunk: SearchResultChunkBackend
   title: string
-  extra: Extra
+  extra: SearchResultExtraBackend
 }
 
-interface Hit {
+interface SearchResultHitBackend {
   _score: number
-  _source: Source
+  _source: SearchResultSourceBackend
 }
 
 interface SearchResultBackend {
-  timing: Timing
-  debug: Debug
-  hits: Hit[]
+  timing: SearchResultTiming
+  debug: SearchResultDebugBackend
+  hits: SearchResultHitBackend[]
 }

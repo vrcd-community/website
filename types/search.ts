@@ -15,4 +15,14 @@ interface SearchHit {
   chunkLevel: number
   uri: string
   source: string
+  tags: string[]
+}
+
+interface SearchFilter {
+  source: string
+}
+
+interface SearchParameters {
+  query: string
+  filter?: SearchFilter
 }
