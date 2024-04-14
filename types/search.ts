@@ -25,4 +25,6 @@ interface SearchFilter {
 interface SearchParameters {
   query: string
   filter?: SearchFilter
+  offset?: number
+  size?: number
 }

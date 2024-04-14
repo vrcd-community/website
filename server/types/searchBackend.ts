@@ -2,10 +2,14 @@ interface SearchResultDebugScoreBackend {
   max: number
 }
 
-interface SearchResultDebugBackend {
-  _score: SearchResultDebugScoreBackend
+interface SearchResultDebugQueryBackend {
   from: number
   size: number
+}
+
+interface SearchResultDebugBackend {
+  _score: SearchResultDebugScoreBackend
+  query: SearchResultDebugQueryBackend
 }
 
 interface SearchResultChunkBackend {

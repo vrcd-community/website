@@ -2,7 +2,9 @@ import { search } from "../searchUtils"
 import z from "zod"
 
 const searchSchema = z.object({
-  query: z.string(),
+  query: z.string().max(100),
+  offset: z.coerce.number().int().nonnegative().default(0),
+  size: z.coerce.number().int().nonnegative().max(100).default(30),
 })
 
 export default defineEventHandler(async (event) => {
@@ -20,6 +22,8 @@ export default defineEventHandler(async (event) => {
   return await search(
     query.data.query,
     runtimeConfig.searchEndpoint,
-    runtimeConfig.searchApiKey
+    runtimeConfig.searchApiKey,
+    query.data.offset,
+    query.data.size
   )
 })

@@ -2,11 +2,13 @@ export async function search(
   query: string,
   endpoint: string,
   apiKey: string,
+  offset: number = 0,
+  size: number = 30,
   filter?: SearchFilter
 ) {
   const searchResult = await $fetch<SearchResultBackend>(endpoint, {
     method: "POST",
-    body: { query, filter },
+    body: { query, filter, offset, size },
     headers: {
       authorization: "Bearer " + apiKey,
     },
