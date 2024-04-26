@@ -19,16 +19,18 @@
             <SearchBar jumpToSearch class="max-w-2xl" />
           </div>
           <div class="flex-1 sm:columns-2 columns-1 w-full *:break-inside-avoid space-y-4">
-            <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="开发者汉化计划" info="共同参与汉化工作，让创作无国界"
-              to="/developer-localization-project" />
+            <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="开发者汉化计划" info="共同参与汉化工作，让创作无国界" target="_blank"
+              href="https://wiki.vrcd.org.cn/zh/developer-localization-project" />
             <LinkCard class="bg-[#9091F7] text-[#9091F7]" title="文档库" info="公益，开源，开放的创作者知识库" target="_blank"
               href="https://docs.vrcd.org.cn/"></LinkCard>
             <LinkCard class="bg-[#35B6D6] text-[#35B6D6]" title="VPM 镜像库" info="体验更快、更便捷的 VPM 加载" target="_blank"
               href="https://vcc.vrczh.org/" />
             <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="VRChat 汉化文档中心" info="VRChat 官方文档的汉化项目" target="_blank"
               href="https://docs.vrczh.org/" />
-            <LinkCard class="bg-[#FFB060] text-[#FFB060]" title="VRChat 入门包" info="带你零基础学习创作的最佳途径" to="/" />
-            <LinkCard class="bg-[#F368C7] text-[#F368C7]" title="CC 公开讨论版" info="共同制作编辑可视化文档" to="/" />
+            <LinkCard class="bg-[#FFB060] text-[#FFB060]" title="VRChat 入门包" info="带你零基础学习创作的最佳途径"  target="_blank"
+              href="https://docs.vrcd.org.cn/books/vrchat" />
+            <LinkCard class="bg-[#FFFFFF] text-[#FFFFFF]" title="VRCD Wiki" info="深入了解 VRCD 和各项服务"  target="_blank"
+              href="https://wiki.vrcd.org.cn/" />
 
           </div>
         </div>
