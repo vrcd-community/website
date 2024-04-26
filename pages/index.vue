@@ -29,7 +29,7 @@
               href="https://docs.vrczh.org/" />
             <LinkCard class="bg-[#FFB060] text-[#FFB060]" title="VRChat 入门包" info="带你零基础学习创作的最佳途径"  target="_blank"
               href="https://docs.vrcd.org.cn/books/vrchat" />
-            <LinkCard class="bg-[#FFFFFF] text-[#FFFFFF]" title="VRCD Wiki" info="深入了解 VRCD 和各项服务"  target="_blank"
+            <LinkCard class="bg-[#BFC49F] text-[#BFC49F]" title="VRCD Wiki" info="深入了解 VRCD 和各项服务"  target="_blank"
               href="https://wiki.vrcd.org.cn/" />
 
           </div>
