@@ -78,16 +78,9 @@ const isMenuOpen = ref(false)
 
 const navLinks = [
   {
-    title: '资讯',
-    to: '/',
-    href: undefined,
-    target: undefined
-  },
-  {
-    title: '开发者汉化计划',
-    to: '/developer-localization-project',
-    href: undefined,
-    target: undefined
+    title: '文档库',
+    href: 'https://docs.vrcd.org.cn/',
+    target: '_blank'
   },
   {
     title: 'VRChat 汉化文档中心',
