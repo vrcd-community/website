@@ -61,6 +61,7 @@
 </template>
 
 <script setup lang="ts">
+import IconsBiliBili from '@/components/Icons/BiliBili.vue';
 import IconsKOOK from '@/components/Icons/KOOK.vue'
 
 const colorMode = useColorMode()
@@ -85,9 +86,8 @@ const navLinks = [
   },
   {
     title: '开发者汉化计划',
-    to: '/developer-localization-project',
-    href: undefined,
-    target: undefined
+    href: 'https://wiki.vrcd.org.cn/zh/developer-localization-project',
+    target: '_blank'
   },
   {
     title: 'VRChat 汉化文档中心',
@@ -115,6 +115,18 @@ const socialItems = [
     href: 'https://qm.qq.com/cgi-bin/qm/qr?k=giJOizm4gtgi0LkW8jOguFcDItINIy6n&jump_from=webapi&authKey=VijnIKfoJvsmMu/KXsMCwaNUmCVNv7TC32iKvZnmfKKPAWHuUS0RH1yjIhjv4tB7',
     target: '_blank',
     to: undefined
+  },
+  {
+    icon: 'carbon:logo-discord',
+    tooltip: 'Discord',
+    href: 'https://discord.gg/QpCrkra87W',
+    target: '_blank',
+  },
+  {
+    componentIcon: IconsBiliBili,
+    tooltip: '哔哩哔哩',
+    href: 'https://space.bilibili.com/1353113460',
+    target: '_blank',
   },
   {
     icon: undefined,
