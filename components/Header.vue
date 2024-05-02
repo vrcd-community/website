@@ -63,6 +63,7 @@
 <script setup lang="ts">
 import IconsBiliBili from '@/components/Icons/BiliBili.vue';
 import IconsKOOK from '@/components/Icons/KOOK.vue'
+import IconsVRChat from '@/components/Icons/VRChat.vue'
 
 const colorMode = useColorMode()
 
@@ -114,7 +115,6 @@ const socialItems = [
     tooltip: 'QQ 群',
     href: 'https://qm.qq.com/cgi-bin/qm/qr?k=giJOizm4gtgi0LkW8jOguFcDItINIy6n&jump_from=webapi&authKey=VijnIKfoJvsmMu/KXsMCwaNUmCVNv7TC32iKvZnmfKKPAWHuUS0RH1yjIhjv4tB7',
     target: '_blank',
-    to: undefined
   },
   {
     icon: 'carbon:logo-discord',
@@ -129,12 +129,16 @@ const socialItems = [
     target: '_blank',
   },
   {
-    icon: undefined,
     componentIcon: IconsKOOK,
     tooltip: 'KOOK',
     href: 'https://kook.top/PCMwFB',
     target: '_blank',
-    to: undefined
+  },
+  {
+    componentIcon: IconsVRChat,
+    tooltip: 'VRChat',
+    href: 'https://vrc.group/VRCD.8294',
+    target: '_blank',
   }
 ]
 
