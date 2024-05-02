@@ -1,4 +1,5 @@
 <template>
+  <ConsoleEasterEgg />
   <NuxtPwaManifest />
   <ClientOnly>
     <PromptForUpdate />
