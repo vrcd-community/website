@@ -4,9 +4,9 @@
     <!--主块,竖排，-->
     <div class="sm:space-y-0 space-y-8">
       <div
-        class="pt-28 min-h-screen sm:justify-center flex items-center sm:flex-row flex-col bg-center bg-no-repeat home sm:px-0 px-4">
+        class="min-h-screen sm:justify-center flex items-center sm:flex-row flex-col bg-center bg-no-repeat home sm:px-0 px-4 pt-48 sm:pt-28">
 
-        <div class="sm:w-3/4 mx-auto items-start gap-5 flex 2xl:flex-row flex-col">
+        <div class="xl:w-[1340px] max-[1410px]:mx-8 mx-0 w-auto items-start gap-5 flex 2xl:flex-row flex-col">
           <div class="flex-1 space-y-14">
             <div>
               <h2 class="lg:text-6xl sm:text-5xl text-4xl font-semibold mb-2">
@@ -22,7 +22,7 @@
             <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="开发者汉化计划" info="共同参与汉化工作，让创作无国界" target="_blank"
               href="https://wiki.vrcd.org.cn/zh/developer-localization-project" />
             <LinkCard class="bg-[#9091F7] text-[#9091F7]" title="文档库" info="由社区驱动的创作者知识库" target="_blank"
-              href="https://docs.vrcd.org.cn/"></LinkCard>
+              href="https://docs.vrcd.org.cn/" />
             <LinkCard class="bg-[#35B6D6] text-[#35B6D6]" title="VPM 镜像库" info="更快的 VPM 包安装体验" target="_blank"
               href="https://vcc.vrczh.org/" />
             <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="VRChat 汉化文档中心" info="VRChat 官方文档的汉化项目" target="_blank"
