@@ -21,7 +21,7 @@
 useHead({
   title: 'VRCD',
   script: [
-    { defer: true, src: 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "0f994579ee6148399fc27afea23abec3"}' }
+    { defer: true, src: 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "cf7468e96d2c4fed8908c87ed5eb24aa"}' }
   ]
 })
 </script>
