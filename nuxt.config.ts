@@ -19,6 +19,12 @@ export default defineNuxtConfig({
     "/": { isr: true },
     "/*": { isr: true },
     "/search": { ssr: false },
+    "*": {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET",
+      },
+    },
   },
   css: ["/assets/css/main.css"],
   site: {
