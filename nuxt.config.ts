@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "nuxt-simple-robots",
     "nuxt-icon-tw",
     "@vite-pwa/nuxt",
+    "nuxt-time",
   ],
   runtimeConfig: {
     searchEndpoint: "",
@@ -37,6 +38,28 @@ export default defineNuxtConfig({
   image: {
     quality: 80,
     format: ["avif", "webp", "png", "jpg"],
+  },
+  content: {
+    highlight: {
+      langs: [
+        "vue",
+        "typescript",
+        "javascript",
+        "json",
+        "css",
+        "html",
+        "c#",
+        "shaderlab",
+        "shell",
+        "mdc",
+        "md",
+        "yaml",
+      ],
+      theme: {
+        default: "github-dark-default",
+        light: "github-light-default",
+      },
+    },
   },
   pwa: {
     workbox: {

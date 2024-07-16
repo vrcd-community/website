@@ -80,8 +80,8 @@ const isMenuOpen = ref(false)
 
 const navLinks = [
   {
-    title: '资讯',
-    to: '/',
+    title: '博客',
+    to: '/blogs',
     href: undefined,
     target: undefined
   },
