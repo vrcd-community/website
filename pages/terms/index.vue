@@ -4,7 +4,7 @@ import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 const termData = await useAsyncData('terms', queryContent('/terms').only(['title', '_path', 'date', 'description']).find)
 
 const terms = computed(() => {
-  const group: Record<string, Pick<ParsedContent, "_path" | "title">[]> = {}
+  const group: Record<string, Pick<ParsedContent, "_path" | "title" | "date">[]> = {}
 
   termData.data.value?.forEach(term => {
     const { _path } = term
@@ -26,7 +26,7 @@ const terms = computed(() => {
     group[termType].push(term)
   })
 
-  const result: Pick<ParsedContent, "_path" | "title">[] = []
+  const result: Pick<ParsedContent, "_path" | "title" | "date">[] = []
 
   Object.keys(group).forEach(key => {
     result.push(group[key].sort((a, b) => {
@@ -51,7 +51,7 @@ const terms = computed(() => {
           <div class="flex gap-1 text-sm items-center">
             <Icon name="mdi-calendar-clock-outline" />
             <span>最后更新于</span>
-            <NuxtTime :datetime="blog?.date" date-style="long" time-style="medium" />
+            <NuxtTime :datetime="blog?.date" date-style="long" />
           </div>
           <h2 class="text-3xl font-semibold">{{ blog?.title }}</h2>
           <p class="text-gray-800 dark:text-gray-300 text-sm mt-1">{{ blog?.description }}</p>
