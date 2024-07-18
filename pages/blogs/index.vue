@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const blogs = await useAsyncData('blogs', queryContent('/blogs').only(['title', '_path', 'date', 'description', 'category', 'author']).find)
+import type { Blog } from '~/types/post';
+
+const blogs = await useAsyncData('blogs', queryContent<Blog>('/blogs').only(['title', '_path', 'date', 'description', 'category', 'author']).find)
 </script>
 
 <template>

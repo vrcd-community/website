@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+import type { PostBase } from '~/types/post';
 
-const termData = await useAsyncData('terms', queryContent('/terms').only(['title', '_path', 'date', 'description']).find)
+const termData = await useAsyncData('terms', queryContent<PostBase>('/terms').only(['title', '_path', 'date', 'description']).find)
 
 const terms = computed(() => {
-  const group: Record<string, Pick<ParsedContent, "_path" | "title" | "date">[]> = {}
+  const group: Record<string, Pick<PostBase, "_path" | "title" | "date" | "description">[]> = {}
 
   termData.data.value?.forEach(term => {
     const { _path } = term
@@ -26,7 +27,7 @@ const terms = computed(() => {
     group[termType].push(term)
   })
 
-  const result: Pick<ParsedContent, "_path" | "title" | "date">[] = []
+  const result: Pick<PostBase, "_path" | "title" | "date" | "description">[] = []
 
   Object.keys(group).forEach(key => {
     result.push(group[key].sort((a, b) => {

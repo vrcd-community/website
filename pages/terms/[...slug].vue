@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { PostBase } from '~/types/post';
+
 definePageMeta({
   middleware: 'terms'
 })
@@ -10,7 +12,7 @@ const termType = computed(() => {
   return /terms\/(.+)\//.exec(route.path)?.[1]
 })
 
-const versionData = await useAsyncData('versions', queryContent('/terms/' + termType.value).only(['title', 'date', '_path']).sort({
+const versionData = await useAsyncData('versions', queryContent<PostBase>('/terms/' + termType.value).only(['title', 'date', '_path']).sort({
   date: 1
 }).find)
 
