@@ -1,4 +1,8 @@
 <script setup lang="ts">
+definePageMeta({
+  middleware: 'terms'
+})
+
 const route = useRoute()
 const router = useRouter()
 
@@ -18,6 +22,12 @@ const selectedVersion = computed({
     router.push(newValue)
   }
 })
+
+if (versionData.data.value?.findIndex(version => version._path === route.path) === -1) {
+  if (versionData.data.value[0]?._path) {
+    router.push(versionData.data.value[0]?._path)
+  }
+}
 </script>
 
 <template>
