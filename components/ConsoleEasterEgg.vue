@@ -7,3 +7,5 @@ onMounted(() => {
   console.log('%c             这个仇我记了', style)
 })
 </script>
+
+<template></template>
