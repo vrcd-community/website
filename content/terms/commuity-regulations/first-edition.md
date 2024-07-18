@@ -1,5 +1,5 @@
 ---
-title: 社区规章 v1.1
+title: 社区规章初版
 date: null
 description: "社区守则、违规标准、管理申诉等内容。"
 ---

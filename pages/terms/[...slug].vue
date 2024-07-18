@@ -6,7 +6,9 @@ const termType = computed(() => {
   return /terms\/(.+)\//.exec(route.path)?.[1]
 })
 
-const versionData = await useAsyncData('versions', queryContent('/terms/' + termType.value).only(['title', 'date', '_path']).find)
+const versionData = await useAsyncData('versions', queryContent('/terms/' + termType.value).only(['title', 'date', '_path']).sort({
+  date: 1
+}).find)
 
 const selectedVersion = computed({
   get() {
