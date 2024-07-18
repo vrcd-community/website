@@ -80,25 +80,22 @@ const isMenuOpen = ref(false)
 
 const navLinks = [
   {
+    title: '服务',
+    to: '/',
+    href: undefined,
+    target: undefined
+  },
+  {
     title: '博客',
     to: '/blogs',
     href: undefined,
     target: undefined
   },
   {
-    title: '开发者汉化计划',
-    href: 'https://wiki.vrcd.org.cn/zh/developer-localization-project',
-    target: '_blank'
-  },
-  {
-    title: 'VRChat 汉化文档中心',
-    href: 'https://docs.vrczh.org/',
-    target: '_blank'
-  },
-  {
-    title: 'VPM 镜像站',
-    href: 'https://vcc.vrczh.org',
-    target: '_blank'
+    title: '条款',
+    to: '/terms',
+    href: undefined,
+    target: undefined
   }
 ]
 

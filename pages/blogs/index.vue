@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const blogs = await useAsyncData('blogs', queryContent('/blogs').find)
+const blogs = await useAsyncData('blogs', queryContent('/blogs').only(['title', '_path', 'date', 'description', 'category', 'author']).find)
 </script>
 
 <template>
