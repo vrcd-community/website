@@ -52,7 +52,7 @@ const terms = computed(() => {
           <div class="flex gap-1 text-sm items-center">
             <Icon name="mdi-calendar-clock-outline" />
             <span>最后更新于</span>
-            <NuxtTime :datetime="blog?.date" date-style="long" />
+            <NuxtTime :datetime="blog?.date" date-style="long" time-style="medium" />
           </div>
           <h2 class="text-3xl font-semibold">{{ blog?.title }}</h2>
           <p class="text-gray-800 dark:text-gray-300 text-sm mt-1">{{ blog?.description }}</p>

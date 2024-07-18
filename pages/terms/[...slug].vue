@@ -51,7 +51,7 @@ if (versionData.data.value?.findIndex(version => version._path === route.path) =
                 class="flex gap-2 bg-black text-white">
                 <span>{{ version.title ?? '无标题' }}</span>
                 <span v-if="version.date"> / 最后更新于
-                  <NuxtTime :datetime="version.date" date-style="long" />
+                  <NuxtTime :datetime="version.date" date-style="long" time-style="medium" />
                 </span>
                 <span v-else> / 最后更新日期未知</span>
               </option>
