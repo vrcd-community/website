@@ -4,8 +4,8 @@
       <IconsVRCD />
     </ClientOnly>
     <div class="flex space-x-12 mt-4">
-      <NuxtLink class="flex-auto">服务条款</NuxtLink>
-      <NuxtLink class="flex-auto">隐私政策</NuxtLink>
+      <NuxtLink class="flex-auto" to="/terms/community-regulations/">社区规章</NuxtLink>
+      <!-- <NuxtLink class="flex-auto">隐私政策</NuxtLink> -->
     </div>
     <p class="text-gray-600 mt-10">© 2023{{ currentYear !== 2023 ? '-' + currentYear : '' }} VRCD</p>
   </div>
