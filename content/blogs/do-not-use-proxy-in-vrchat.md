@@ -11,7 +11,7 @@ date: 1721503200000
 
 我们于 2024/7/21 3:12 收到 VRChat 社区技术支持人员的通知：VRChat 官方正在开始解禁使用 UU 加速器被误封的账号，如果你没有被解封禁，请提交申诉。
 
-![VRChat 社区技术支持人员的回复](/blogs/reply-from-support-community.png)
+![VRChat 社区技术支持人员的回复](/blog/reply-from-support-community.png)
 
 ## 我还没被封号
 
