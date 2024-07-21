@@ -6,11 +6,11 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/color-mode",
     "@nuxt/content",
-    "nuxt-simple-sitemap",
-    "nuxt-simple-robots",
+    "@nuxtjs/robots",
     "nuxt-icon-tw",
     "@vite-pwa/nuxt",
     "nuxt-time",
+    "@nuxtjs/sitemap",
   ],
   runtimeConfig: {
     searchEndpoint: "",
