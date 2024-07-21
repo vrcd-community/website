@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { Blog } from '~/types/post';
 
-const blogs = await useAsyncData('blogs', queryContent<Blog>('/blogs').only(['title', '_path', 'date', 'description', 'category', 'author']).find)
+const blogs = await useAsyncData('blogs', queryContent<Blog>('/blogs').only(['title', '_path', 'date', 'description', 'category', 'author']).sort({
+  date: -1
+}).find)
 </script>
 
 <template>
