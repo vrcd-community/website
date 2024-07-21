@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-6xl mx-auto pt-40 pb-12 px-12">
+  <div class="max-w-6xl mx-auto pt-32 pb-12 px-12">
     <ContentDoc>
       <template v-slot="{ doc }">
         <div>

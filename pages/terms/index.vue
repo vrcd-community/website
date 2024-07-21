@@ -40,7 +40,7 @@ const terms = computed(() => {
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto pt-40 pb-12 px-12 min-h-screen">
+  <div class="max-w-6xl mx-auto pt-32 pb-12 px-12 min-h-screen">
     <div class="space-y-8">
       <h1 class="text-6xl font-bold">条款</h1>
       <p>社区规章、隐私政策等...</p>

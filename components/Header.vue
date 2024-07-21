@@ -1,6 +1,5 @@
 <template>
   <div class="fixed w-full z-10">
-    <div class="text-center bg-orange-800 text-white p-2">VRCD 官网目前处于开发阶段，内容仅供参考。实际内容请以官方社交媒体账号公布信息和管理人员通告为准。</div>
     <div
       class="transition px-4 fixed h-20 w-full flex justify-between items-center bg-white/50 dark:bg-neutral-900/80 backdrop-blur-3xl">
       <div class="space-x-4 flex">

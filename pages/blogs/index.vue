@@ -5,7 +5,7 @@ const blogs = await useAsyncData('blogs', queryContent<Blog>('/blogs').only(['ti
 </script>
 
 <template>
-  <div class="max-w-6xl mx-auto pt-40 pb-12 px-12 min-h-screen">
+  <div class="max-w-6xl mx-auto pt-32 pb-12 px-12 min-h-screen">
     <div class="space-y-8">
       <h1 class="text-6xl font-bold">博客</h1>
       <p>我们的周报，重大发表，技术博客又或是其他东西... 反正什么都可能写在这里。</p>
