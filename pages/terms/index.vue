@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 import type { PostBase } from '~/types/post';
 
 const termData = await useAsyncData('terms', queryContent<PostBase>('/terms').only(['title', '_path', 'date', 'description']).find)

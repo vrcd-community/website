@@ -33,6 +33,7 @@ export default defineNuxtConfig({
   },
   sitemap: {
     strictNuxtContentPaths: true,
+    sources: ["/api/__sitemap__/urls"],
   },
   devtools: { enabled: true },
   image: {
