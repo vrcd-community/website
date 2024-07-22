@@ -214,6 +214,119 @@ TODO
 
 #### 文字版
 
+>
+
+```plaintext
+* Flare (2024/7/20 22:57):
+Do you know if they're using a VPN? i would guess yes
+
+你知道他们有在用 VPN 吗？我猜在用
+
+* Anteness (2024/7/20 22:58):
+Oh yeah, most Chinese users use VPN  
+This friend in the third screenshot used vpn  
+He use UU accelerator, I use it too.
+https://uu.163.com/m/active
+
+对，大部分中国人都用 VPN
+第三个朋友的截图就在用 VPN
+他用的是 UU 加速器，我也在用。
+https://uu.163.com/m/active
+
+* Flare (2024/7/20 22:59):
+where does it VPN you to?  
+i'm wondering if the VPN failed after CrowdStrike or something
+
+你用 VPN 是用来做什么的？
+我在想，是不是在 CrowdStrike 之后 VPN 就失效了？
+
+* Anteness (2024/7/20 23:00):
+Oooff
+
+* Anteness (2024/7/20 23:01) (reply to "where does it VPN you to?"):
+Game service access, such as Steam, Elden Ring Multiplayer, or any other game service they have not server in China.
+Some of them may use Clash or Shadow Socket R for web browsing but for gaming they use UU, that's what I know
+
+访问游戏服务，比如说 Steam，艾尔登法环多人联机或其他在中国没有服务器的游戏服务。
+一部分人在用猫猫或者酸酸乳浏览网页，但是他们打游戏用 UU，我知道的就这么多了
+
+* Flare (2024/7/20 23:04):
+ok, this is helpful context
+we will look into it
+
+好的，这个上下文信息很有帮助
+我们会调查这个问题的
+
+* Anteness (2024/7/20 24:04):
+Thank you Flare!
+
+谢谢你 Flare！
+
+* Anteness (2024/7/20 23:59):
+They are collecting feedbacks and as I saw for now most of them use UU and the software route their connection through Turkey. (from editor: It's wrong, actually is VRChat's GeoIP database think the ip of the vpn server is in turkey, but we didn't know about this at that time.)
+My friend take this screenshot via https://vrchat.com/cdn-cgi/trace
+
+If these info helps I can keep looking these and help
+
+他们收集了一些反馈然后我发现其中大部分人都用 UU 并且软件把他们的连接路由到了土耳其（译者注：这是错的，实际上是 VRChat 的 GeoIP 错认为节点网络出口在土耳其，但是当时情况并不明了）
+我的朋友给 https://vrchat.com/cdn-cgi/trace 截了个图
+
+* Flare (2024/7/21 00:10):
+this should be enough for now, i'll let you know if i need more
+
+这些信息应该已经足够了，如果需要更多信息我会告诉你的
+
+* Anteness (2024/7/21 01:43):
+Hmmm... here is some collected data and they ask me to localize it to English and share with you.
+
+Hmmm... 他们告诉我把这些数据翻译到英语然后分享给你。
+
+* Flare (2024/7/21 01:57):
+thank you!
+just to confirm, none of theses users are logging in through vket right? this is just through vrchat like normal? (from editor: You can explore the vket on their website, but you can't play together with the VRChat player, and in this incident nobody logged via the VKET website)
+
+谢谢！
+只是确认一下，他们中没有人是通过 vket 网页登录的吧？他们是正常通过 VRChat 登录的吧？（译者注：vket 是可以在网页逛的，但是网页 vket 和 VRChat 里的 vket 根本不互通，此次事件也和 vket 网页无关）
+
+* Flare (2024/7/21 02:09):
+we have an engineer manually unbanning all of the users on the UU ip. rollout may take a little awhile!
+you can let your friends know to check later
+
+我们有一个工程师正在手动解封所有使用 UU IP 的用户。可能需要一些时间才会生效！
+你可以告诉你的朋友让他们等一下检查一下自己的账号
+
+* Anteness (2024/7/21 07:06):
+Morning... Nice! I'm gonna tell them now.
+
+早上好...（译者癫：香香软软的刚睡醒的大尾巴狐狸.... 欸嘿嘿...（流口水））好！我会告诉他们的。
+
+* Anteness (2024/7/21 07:17) (reply to "just to confirm, none of theses users are logging in through vket right?..."):
+Ah yeah, I think in this excel none of them loggin (correct by editor: logging) via vket website, if you mean about this
+I think in the 6th line of the excel sheet is meaning of "Playing in VKet session".
+I saw the official announcement, thank you!
+
+对，我觉得这个表格上的人都不是通过 vket 网站登录的，如果你指的是这个意思的话。
+我觉得表格第六行的意思是 “在 vket 世界里玩”
+我看到官方公告了，谢谢！
+
+:cookie:
+
+* Flare (2024/7/21 07:35):
+hopefully people can log in now, let me know if they're still banned
+
+希望人们现在可以重新登录，如果还有人账号没有回复请告诉我
+
+* Anteness (2024/7/21 07:37):
+It's morning 7:37 here so I guess they are still sleeping
+But I'm already see somebody said his/her account is good for now
+
+这里现在是早上 7:37 所以我猜他们还在睡觉
+但是我已经看到有人说他/她的账号已经恢复了
+
+* Flare (2024/7/21 07:37):
+那么好
+```
+
 #### 原始截图
 
 ![官方工程师聊天记录截图 1](/blog/report-got-banned-after-using-proxy-in-vrchat/full-chat-0.png)
