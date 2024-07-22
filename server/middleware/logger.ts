@@ -7,7 +7,9 @@ export default defineEventHandler((event) => {
     return
   }
 
-  const rawUrl = getRequestURL(event)
+  const rawUrl = getRequestURL(event, {
+    xForwardedProto: true,
+  })
 
   const path = rawUrl.pathname
   const host = rawUrl.host
@@ -23,8 +25,15 @@ export default defineEventHandler((event) => {
 
   const method = event.method
   const headers = getRequestHeaders(event)
-  const clientIp = getRequestIP(event) ?? "0.0.0.0"
+  const clientIp =
+    getRequestIP(event, {
+      xForwardedFor: true,
+    }) ||
+    event.node.req.socket.remoteAddress ||
+    "0.0.0.0"
   const requestTimestamp = Date.now()
+
+  console.log(event.node.req)
 
   const log: Log = {
     headers,
