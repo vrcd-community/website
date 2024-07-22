@@ -15,6 +15,14 @@ export default defineNuxtConfig({
   runtimeConfig: {
     searchEndpoint: "",
     searchApiKey: "",
+    logger: {
+      enabled: false,
+      baseUrl: "",
+      prefix: "",
+      zone: "",
+      apiKey: "",
+      pipeline: "",
+    },
   },
   routeRules: {
     "/": { isr: true },
