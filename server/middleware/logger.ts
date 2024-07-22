@@ -31,9 +31,8 @@ export default defineEventHandler((event) => {
     }) ||
     event.node.req.socket.remoteAddress ||
     "0.0.0.0"
-  const requestTimestamp = Date.now()
 
-  console.log(event.node.req)
+  const requestTimestamp = Date.now()
 
   const log: Log = {
     headers,
