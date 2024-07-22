@@ -48,11 +48,11 @@ function postLog(
     pipeline: string
   }
 ) {
-  const loggerBaseUrl = loggerConfig.loggerBaseUrl
-  const loggerPrefix = loggerConfig.loggerPrefix
-  const loggerZone = loggerConfig.loggerZone
-  const loggerApiKey = loggerConfig.loggerApiKey
-  const loggerPipeline = loggerConfig.loggerPipeline
+  const loggerBaseUrl = loggerConfig.baseUrl
+  const loggerPrefix = loggerConfig.prefix
+  const loggerZone = loggerConfig.zone
+  const loggerApiKey = loggerConfig.apiKey
+  const loggerPipeline = loggerConfig.pipeline
 
   fetch(loggerBaseUrl + `/push/${loggerPrefix}/${loggerZone}`, {
     method: "POST",
