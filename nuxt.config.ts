@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     "@vite-pwa/nuxt",
     "nuxt-time",
     "@nuxtjs/sitemap",
-    './vrcd-nuxt-server-side-logging/src/module'
   ],
   runtimeConfig: {
     searchEndpoint: "",
