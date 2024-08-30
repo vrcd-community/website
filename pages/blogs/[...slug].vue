@@ -13,7 +13,7 @@
               <NuxtTime :datetime="doc?.date" date-style="long" time-style="medium" />
             </div>
           </div>
-          <h1 class="text-6xl font-bold mt-2"># {{ doc.title ?? '无标题' }}</h1>
+          <h1 class="text-4xl font-bold mt-2"># {{ doc.title ?? '无标题' }}</h1>
           <div class="flex gap-1 mt-1 text-sm">
             <span>由 </span>
             <span v-for="author in doc?.author" :key="author">@{{ author }}</span>
@@ -22,7 +22,7 @@
         </div>
         <article class="mt-8 mb-12">
           <ContentRenderer :value="doc"
-            class="prose dark:prose-invert prose-headings:my-2 prose-a:prose-headings:no-underline max-w-none" />
+            class="prose dark:prose-invert prose-headings:border-black/30 dark:prose-headings:border-white/40 prose-headings:border-b-[1px] prose-headings:pb-1 prose-headings:my-4 prose-a:prose-headings:no-underline max-w-none" />
         </article>
         <p class="text-center text-gray-600/40 dark:text-gray-400/80 font-semibold text-xl select-none">The End</p>
       </template>
@@ -31,11 +31,5 @@
       </template>
     </ContentDoc>
   </div>
-  <div class="home h-screen w-screen fixed top-0 left-0 bg-center z-[-10]"></div>
+  <div class="h-screen w-screen fixed top-0 left-0 bg-center z-[-10]"></div>
 </template>
-
-<style scoped>
-.home {
-  background-image: url('/images/home/background-cover.png');
-}
-</style>
