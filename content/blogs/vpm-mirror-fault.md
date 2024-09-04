@@ -1,6 +1,6 @@
 ---
 author: [ "SKPlol" ]
-title: "关于对 VPM 镜像站的种种问题的临时停运通知"
+title: "关于对 VPM 镜像站在 ALCOM/VCC 内下载包出现 404 错误及其他相关问题的公告"
 description: "我们为这样的情况深感抱歉"
 category: "服务故障"
 date: 1725385118000
