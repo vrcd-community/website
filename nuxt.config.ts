@@ -38,7 +38,7 @@ export default defineNuxtConfig({
   },
   css: ["/assets/css/main.css"],
   site: {
-    url: "https://vrcd.org.cn",
+    url: "https://www.vrcd.org.cn",
   },
   sitemap: {
     strictNuxtContentPaths: true,
