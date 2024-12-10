@@ -39,11 +39,11 @@ date: 1732432374000
 1. 按下 `Win`+`X` 键，在弹出的菜单选择 `终端管理员` 或 `Windows PowerShell（管理员）`。
 2. 在弹出的窗口输入以下命令查看您需要删除的文件列表，请您确认是否有误删文件：
   ```powershell
-  Get-ChildItem (Get-WmiObject Win32_OperatingSystem).SystemDrive | Where{$_.Name -Match "fba_ads_\d+_[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}.json"}
+  Get-ChildItem -Path "$((Get-CimInstance -ClassName Win32_OperatingSystem).SystemDrive)\" -File | Where{$_.Name -Match "fba_ads_\d+_[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}.json"}
   ```
 3. 然后执行以下命令，删除列出的文件：
   ```powershell
-  Get-ChildItem (Get-WmiObject Win32_OperatingSystem).SystemDrive | Where{$_.Name -Match "fba_ads_\d+_[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}.json"} | Remove-Item
+  Get-ChildItem -Path "$((Get-CimInstance -ClassName Win32_OperatingSystem).SystemDrive)\" -File | Where{$_.Name -Match "fba_ads_\d+_[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}.json"} | Remove-Item
   ```
 
 请谨慎执行，每一个命令产生输出时，如您不明白输出的信息是什么，请及时在社区里反馈。
