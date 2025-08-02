@@ -19,9 +19,9 @@
             <SearchBar jumpToSearch class="max-w-2xl" />
           </div>
           <div class="flex-1 sm:columns-2 columns-1 w-full *:break-inside-avoid space-y-4">
-            <LinkCard class="bg-[#24C29F] text-[#24C29F]" title="开发者汉化计划" info="共同参与汉化工作，让创作无国界" target="_blank"
-              href="https://wiki.vrcd.org.cn/zh/developer-localization-project" />
-            <LinkCard class="bg-[#9091F7] text-[#9091F7]" title="文档库" info="由社区驱动的创作者知识库" target="_blank"
+            <LinkCard class="bg-[#6FAD66] text-[#6FAD66]" title="论坛" info="讨论，发布任何有关 VR 的内容" target="_blank"
+              href="https://bbs.vrcd.org.cn/" />
+            <LinkCard class="bg-[#867CAC] text-[#867CAC]" title="文档库" info="由社区驱动的创作者知识库" target="_blank"
               href="https://docs.vrcd.org.cn/" />
             <LinkCard class="bg-[#35B6D6] text-[#35B6D6]" title="VPM 镜像库" info="更快的 VPM 包安装体验" target="_blank"
               href="https://vcc.vrczh.org/" />
@@ -31,7 +31,6 @@
               href="https://docs.vrcd.org.cn/books/vrchat" />
             <LinkCard class="dark:bg-[#FFFFFF] dark:text-[#FFFFFF] bg-black text-black" title="VRCD Wiki"
               info="深入了解 VRCD 和各项服务" target="_blank" href="https://wiki.vrcd.org.cn/" />
-
           </div>
         </div>
       </div>
