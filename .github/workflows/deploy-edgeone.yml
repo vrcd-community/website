@@ -37,4 +37,4 @@ jobs:
         run: yarn run build --preset=cloudflare_pages
 
       - name: Deploy to EdgeOne Pages
-        run: npx edgeone pages deploy .output -n ${{ secrets.EDGEONE_PROJECT_NAME }} -t ${{ secrets.EDGEONE_API_TOKEN }}
+        run: npx edgeone pages deploy dist -n ${{ secrets.EDGEONE_PROJECT_NAME }} -t ${{ secrets.EDGEONE_API_TOKEN }}
